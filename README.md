@@ -1,24 +1,22 @@
-# README
+# Clinic APP API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+$ Few Examples
 
-Things you may want to cover:
+# GET /doctors
+ `http :3000/doctors`
 
-* Ruby version
+# POST /doctors
+ `http POST :3000/doctors name="Dr. Sachin Bansal" phone="9999999999" specialization="Cardiologist"`
 
-* System dependencies
+# PUT /doctors/:id
+ `http PUT :3000/doctors/1 name="Dr. Binny Bansal"`
 
-* Configuration
+# DELETE /doctors/:id
+ `http DELETE :3000/doctors/1`
 
-* Database creation
+# GET /appointments
+ `http :3000/appointments`
 
-* Database initialization
+# POST /appointments
+ `http POST :3000/appointments doctor_id=1 patient_id=1 diseases="Heart, BP" appointment_date="2018-05-09 15:32:16"`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
